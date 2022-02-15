@@ -13,8 +13,7 @@ jobs:
 
     - name: Packaging config.tar.gz
       run: |
-        tar -cvzf ../config.tar.gz .
-      working-directory: ./config
+        tar -cvzf config.tar.gz -C config .
 
     - name: Creating release
       uses: ncipollo/release-action@v1
